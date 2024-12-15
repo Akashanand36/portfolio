@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="hero">
+        <header class="header">
+            <nav>
+                <div>
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </div>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#project">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="detail">
+            <h1>I'm <span>Akash</span></h1>
+            <p>This is my official portfolio website</p>
+        </div>
+        <div class="images">
+            <img src="images/shape.png" class="shape" alt="Shape">
+            <img src="images/boy.png" class="boy" alt="Boy">
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="about-img">
+            <img src="images/boy1.png" alt="Boy Image">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>ME</span></h2>
+            <br>
+            <h3>Frontend <span>Developer</span></h3>
+            <p>
+                Hello! My name is Akash, and I am a passionate frontend developer based in Chennai. With a strong background in web development, I have dedicated my career to creating beautiful, responsive, and user-friendly websites. I specialize in HTML and CSS, and
+                I love exploring new frameworks and libraries to stay at the forefront of web development trends. When I'm not coding, you can find me working on UI & UX design. Thank you for visiting my page, and I look forward to connecting with you!
+            </p>
+        </div>
+    </section>
+
+    <section id="project" class="project-section">
+        <div class="project-content">
+            <h2>PRO<span>JECTS</span></h2>
+        </div>
+        <div class="project-list">
+            <div class="project">
+                <h3>1. Interactive Infographics</h3>
+                <p>Description: An interactive infographic is a digital visualization tool that presents data, information, or a narrative through a combination of graphics, text, and interactive elements. Unlike traditional static infographics, interactive
+                    infographics engage users by allowing them to interact with the content, often through features such as clickable elements, hover effects, animations, and dynamic data visualization.</p>
+                <br>
+                <h4>Technologies Used:</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>2. Storytelling Website</h3>
+                <p>Description: A storytelling website is a digital platform designed to convey narratives, ideas, or information through a combination of multimedia elements such as text, images, videos, animations, and interactive features. These websites
+                    aim to create immersive and engaging experiences that captivate the audience and effectively communicate the story's message.</p>
+                <br>
+                <h4>Technologies Used:</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <h2>CONTACT <span>ME</span></h2>
+            <form action="submit_form.php" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>

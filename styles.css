@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    padding: 10px 50px;
+    z-index: 1000;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgba(19, 20, 15, 0.945);
+    display: flex;
+}
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: top center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(242, 155, 4);
+}
+
+.detail {
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.detail h1 {
+    font-size: 50px;
+    color: rgb(235, 255, 248);
+    margin-bottom: 20px;
+}
+
+span {
+    color: orange;
+}
+
+.detail p {
+    font-size: large;
+    color: azure;
+    line-height: 22px;
+}
+
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0%;
+    right: 100px;
+}
+
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+    bottom: 40px;
+}
+
+.images:hover .boy {
+    left: 45%;
+}
+
+.logo {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    padding: 10px;
+    height: auto;
+    width: 130px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: white;
+}
+
+.about-img img {
+    position: relative;
+    width: 250px;
+    box-shadow: 0 0 25px black, 0 0 50px black;
+    border-radius: 5%;
+}
+
+.about-content h2 {
+    text-align: left;
+    color: black;
+    font-size: 42px;
+}
+
+.about-content h3 {
+    font-size: 62px;
+    color: black;
+}
+
+.about-content p {
+    color: black;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+.project-section {
+    padding: 200px 0px;
+    background-color: rgb(235, 245, 241);
+}
+
+.project-content h2 {
+    position: relative;
+    align-items: center;
+    left: 450px;
+    color: rgb(0, 0, 0);
+    font-size: 42px;
+    bottom: 310px;
+    display: flex;
+    text-decoration: underline;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.project {
+    padding: 80px;
+    right: 150px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 20px rgb(0, 0, 0);
+    cursor: pointer;
+    width: 80%;
+    bottom: 20px;
+    max-width: 600px;
+    height: 60px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 182, 47);
+}
+
+.project-list h3 {
+    position: relative;
+    right: 70px;
+    margin-bottom: 5px;
+    bottom: 80px;
+    text-decoration: underline;
+}
+
+.project-list p {
+    position: relative;
+    right: 70px;
+    margin-bottom: 5px;
+    bottom: 80px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.project-list ul {
+    position: relative;
+    font-weight: bold;
+    right: 30px;
+    bottom: 90px;
+    font-size: smaller;
+}
+
+.project-list h4 {
+    position: relative;
+    bottom: 95px;
+    right: 70px;
+    text-decoration: underline;
+    font-size: medium;
+}
+
+.contact-section {
+    padding: 10px 0px;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+.contact-section h2 {
+    position: relative;
+    font-size: 42px;
+    color: #090909;
+    margin-bottom: 30px;
+    top: 10px;
+    text-decoration: underline;
+}
+
+.contact-section h2 span {
+    color: orange;
+}
+
+.contact-form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fffbfb;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f37d29;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    right: 10px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: orange;
+}
+
+button[type="submit"] {
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: darkorange;
+}
